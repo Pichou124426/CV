@@ -19,7 +19,7 @@ function Contact() {
             Voir mon profil LinkedIn
           </a>
         </p>
-        <Button variant="primary" href="/cv-noah-sillaire.pdf" download>
+        <Button variant="primary" href="/CV-noah.pdf" download>
           Télécharger le CV PDF
         </Button>
       </Container>
