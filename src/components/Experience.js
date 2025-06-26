@@ -57,9 +57,7 @@ function Experience() {
           composants électroniques tels que l’ESP32, des LEDs, boutons
           poussoirs, et un buzzer. Ce projet m’a permis de renforcer mes
           compétences en programmation embarquée, en gestion de composants
-          électroniques, et en logique de jeu interactive. Souhaites-tu que
-          j’intègre ce projet dans une version globale de ton CV ? Je peux aussi
-          t’aider à le rédiger sous forme de portfolio de projets.
+          électroniques, et en logique de jeu interactive. 
         </p>
       </Container>
     </section>
