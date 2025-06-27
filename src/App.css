@@ -1,0 +1,43 @@
+.experience {
+  background-color: #f3f4f6; /* Gris doux */
+  border-left: 4px solid #374151; /* Gris anthracite */
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #1f2937; /* Texte sombre */
+}
+
+.experience-it {
+  background-color: #eaf4ff; /* Bleu pastel tech */
+  border-left: 4px solid #007bff;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #003554;
+}
+
+.legend {
+  display: flex;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center;
+  gap: 1.5rem; /* Espace entre les items */
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.legend .experience-it,
+.legend .experience {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.legend .experience-it {
+  background-color: #007bff;
+}
+
+.legend .experience {
+  background-color: #374151;
+}

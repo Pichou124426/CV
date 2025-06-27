@@ -6,7 +6,7 @@ import Experience from './components/Experience';
 import Competence from './components/Competence';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
+import './App.css'; 
 
 function App() {
   return (
