@@ -1,27 +1,40 @@
 import React from 'react';
-import { Container, Button } from 'react-bootstrap';
-import { FaLinkedin } from 'react-icons/fa';
+import { Container } from 'react-bootstrap';
+import { FaLinkedin, FaEnvelope, FaPhoneAlt, FaDownload } from 'react-icons/fa';
 
 function Contact() {
   return (
-    <section id="contact" className="bg-light py-5">
-      <Container>
-        <h2 className="mb-4">Contact</h2>
-        <p>Email : <a href="mailto:nsillaire@gmail.com">nsillaire@gmail.com</a></p>
-        <p>Téléphone : <a href="phoneto:07.77.28.93.75">0777289375</a></p>
-        <p>
-          <FaLinkedin size={20} style={{ marginRight: '8px' }} />
-          <a
-            href="https://www.linkedin.com/in/noah-sillaire-186682349"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Voir mon profil LinkedIn
-          </a>
-        </p>
-        <Button variant="primary" href="/CV-noah.pdf" download>
-          Télécharger le CV PDF
-        </Button>
+    <section id="contact" className="contact-section py-5">
+      <Container className="text-center">
+        <h2 className="mb-5"> Me contacter</h2>
+
+        <div className="contact-grid">
+          <div className="contact-item">
+            <FaEnvelope className="contact-icon" />
+            <a href="mailto:nsillaire@gmail.com">nsillaire@gmail.com</a>
+          </div>
+
+          <div className="contact-item">
+            <FaPhoneAlt className="contact-icon" />
+            <a href="tel:0777289375">07 77 28 93 75</a>
+          </div>
+
+          <div className="contact-item">
+            <FaLinkedin className="contact-icon" />
+            <a
+              href="https://www.linkedin.com/in/noah-sillaire-186682349"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Profil LinkedIn
+            </a>
+          </div>
+
+          <div className="contact-item">
+            <FaDownload className="contact-icon" />
+            <a href="/CV-noah.pdf" download>Télécharger mon CV</a>
+          </div>
+        </div>
       </Container>
     </section>
   );
