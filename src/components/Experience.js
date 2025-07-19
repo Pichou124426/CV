@@ -83,6 +83,20 @@ function Experience() {
           dans un contexte de pression temporelle stimulant.
         </p>
 
+         <h5 className="experience">
+          Secrétaire dans un centre d'ophtalmologie – OphtaJaude{" "}
+        </h5>
+        <p className="experience">
+          <em>Juillet + Septembre - 2025</em>
+          <br />
+          Secrétaire médicale au centre d’ophtalmologie d'OphtaJaude, je suis en
+          charge de l’accueil des patients, de la gestion des rendez-vous, de la
+          coordination avec les médecins et orthoptistes, de la préparation des
+          dossiers médicaux, de la saisie des comptes rendus, de la facturation
+          et de la télétransmission, tout en assurant un accompagnement humain
+          et bienveillant des patients tout au long de leur parcours de soins.
+        </p>
+
         <h5 className="experience">
           Hôte d’accueil et Caster attraction – Parc Vulcania{" "}
         </h5>
