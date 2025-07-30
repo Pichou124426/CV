@@ -51,7 +51,7 @@ function Experience() {
             Autres domaines
           </button>
           <button
-            className="experience"
+            className="experience-tous"
             onClick={() => setFiltre(null)}
           >
             Tous

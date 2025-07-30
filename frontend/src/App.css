@@ -2,13 +2,17 @@
 :root {
   --bg-main: #f9fafb;
   --text-main: #1f2937;
-  --accent-dark: #374151;
-  --accent-blue: #007bff;
-  --accent-soft-blue: #eaf4ff;
-  --accent-gray: #f3f4f6;
+  --accent-dark: #111111;           /* Noir profond chic */
+  --accent-blue: #007bff;           /* Bleu tech pro */
+  --accent-soft-blue: #eaf4ff;      /* Fond bleu doux */
+  --accent-gray: #f3f3f3;           /* Fond neutre clair */
+  --accent-steel: #6b7280; /* gris acier élégant */
+  
+
   --rounded: 8px;
   --shadow-light: 0 4px 14px rgba(0, 0, 0, 0.05);
 }
+
 
 body {
   background-color: var(--bg-main);
@@ -52,21 +56,70 @@ h2 {
 }
 
 /* 📂 Bloc expérience générique */
-.experience,
+
+
+
+.experience-it:hover {
+  background-color: #0056b3;
+}
+
+/* 🖤 Bouton Autres domaines */
+.experience {
+  background-color: var(--accent-dark); /* Noir défini dans :root */
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: var(--rounded);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-light);
+  transition: background-color 0.3s ease;
+}
+
+.experience:hover {
+  background-color: #000000d9;
+}
+
+/* ⚙️ Bouton Tous — gris acier élégant */
+.experience-tous {
+  background-color: #6b7280; /* Gris neutre qui matche bien */
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: var(--rounded);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-light);
+  transition: background-color 0.3s ease;
+}
+
+.experience-tous:hover {
+  background-color: #4b5563;
+}
+
+
 .experience-it {
+  padding: 14px 18px;
+  background-color: var(--accent-soft-blue);
+  border-left: 5px solid var(--accent-blue);
+  border-radius: var(--rounded);
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-light);
+  color: #0f1f3b;
+  transition: all 0.3s ease-in-out;
+}
+
+.experience {
   padding: 14px 18px;
   background-color: var(--accent-gray);
   border-left: 5px solid var(--accent-dark);
   border-radius: var(--rounded);
   margin-bottom: 20px;
-  transition: all 0.3s ease-in-out;
   box-shadow: var(--shadow-light);
+  color: var(--accent-dark);
+  transition: all 0.3s ease-in-out;
 }
 
-.experience-it {
-  background-color: var(--accent-soft-blue);
-  border-left-color: var(--accent-blue);
-}
 
 /* ✨ Effet au survol */
 .experience:hover,
