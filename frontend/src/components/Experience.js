@@ -15,7 +15,7 @@ function Experience() {
         const res = await fetch(url);
         const data = await res.json();
 
-        console.log("Données reçues :", data); // 🔍 vérification
+        console.log("Données reçues :", data);
 
         if (Array.isArray(data)) {
           setExperiences(data);
@@ -39,13 +39,13 @@ function Experience() {
 
         <div className="legend mb-4">
           <button
-            className="experience-it"
+            className="experience-it-button"
             onClick={() => setFiltre("informatique")}
           >
             Informatique
           </button>
           <button
-            className="experience"
+            className="experience-button"
             onClick={() => setFiltre("autres")}
           >
             Autres domaines
@@ -58,22 +58,28 @@ function Experience() {
           </button>
         </div>
 
-        {/* 🔐 Vérification de type */}
         {Array.isArray(experiences) && experiences.length > 0 ? (
-          experiences.map((exp) => (
-            <div key={exp.id} className={`experience-${exp.domaine}`}>
-              <h5 className="experience-it">{exp.titre} – {exp.entreprise}</h5>
-              <p className="experience-it">
-                <em>
-                  {exp.date_debut} {exp.date_fin ? `– ${exp.date_fin}` : ""}
-                </em>
-                <br />
-                {exp.description}
-              </p>
-            </div>
-          ))
+          experiences.map((exp) => {
+            const classeBloc =
+              exp.domaine === "informatique" ? "experience-it" : "experience";
+
+            return (
+              <div key={exp.id} className={classeBloc}>
+                <h5>{exp.titre} – {exp.entreprise}</h5>
+                <p>
+                  <em>
+                    {exp.date_debut} {exp.date_fin ? `– ${exp.date_fin}` : ""}
+                  </em>
+                  <br />
+                  {exp.description}
+                </p>
+              </div>
+            );
+          })
         ) : (
-          <p className="text-muted">Aucune expérience trouvée pour ce domaine !! </p>
+          <p className="text-muted">
+            Aucune expérience trouvée pour ce domaine !!
+          </p>
         )}
       </Container>
     </section>

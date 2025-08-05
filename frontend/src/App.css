@@ -63,40 +63,44 @@ h2 {
   background-color: #0056b3;
 }
 
-/* 🖤 Bouton Autres domaines */
-.experience {
-  background-color: var(--accent-dark); /* Noir défini dans :root */
-  color: #ffffff;
+/* ✅ Style uniforme pour tous les boutons */
+.legend button {
   border: none;
-  padding: 10px 18px;
   border-radius: var(--rounded);
+  padding: 10px 18px;
   font-weight: 600;
+  color: #ffffff;
   cursor: pointer;
   box-shadow: var(--shadow-light);
   transition: background-color 0.3s ease;
 }
 
-.experience:hover {
+/* 🟦 Informatique */
+.experience-it-button {
+  background-color: var(--accent-blue);
+}
+
+.experience-it-button:hover {
+  background-color: #0056b3;
+}
+
+/* ⚫ Autres domaines */
+.experience-button {
+  background-color: var(--accent-dark);
+}
+
+.experience-button:hover {
   background-color: #000000d9;
 }
 
-/* ⚙️ Bouton Tous — gris acier élégant */
+/* ⚙️ Tous — gris acier élégant */
 .experience-tous {
-  background-color: #6b7280; /* Gris neutre qui matche bien */
-  color: #ffffff;
-  border: none;
-  padding: 10px 18px;
-  border-radius: var(--rounded);
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: var(--shadow-light);
-  transition: background-color 0.3s ease;
+  background-color: #6b7280;
 }
 
 .experience-tous:hover {
   background-color: #4b5563;
 }
-
 
 .experience-it {
   padding: 14px 18px;
