@@ -5,8 +5,10 @@ Ce projet est un CV en ligne développé avec React et Bootstrap.
 ## Installation
 
 ```bash
-npm install
+front : 
 npm start
+back
+npm run dev 
 ```
 
 
