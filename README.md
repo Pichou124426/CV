@@ -7,7 +7,7 @@ Ce projet est un CV en ligne développé avec React et Bootstrap.
 ```bash
 front : 
 npm start
-back
+back :
 npm run dev 
 ```
 
